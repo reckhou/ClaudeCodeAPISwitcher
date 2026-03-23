@@ -56,10 +56,16 @@ See: .planning/PROJECT.md (updated 2026-03-23)
 | 01-core-switching-cli | 02 | 8min | 2 | 5 |
 | 02-model-configuration | 01 | 2min | 2 | 3 |
 
+### Quick Tasks Completed
+
+| # | Description | Date | Commit | Directory |
+|---|-------------|------|--------|-----------|
+| 260323-llx | Create wrapper script for API-key-only Claude Code auth | 2026-03-23 | TBD | [260323-llx-create-wrapper-script-for-api-key-only-c](./quick/260323-llx-create-wrapper-script-for-api-key-only-c/) |
+
 ## Last Session
 
-- **Stopped at:** Completed Phase 02 Plan 01 — model configuration feature shipped
-- **Timestamp:** 2026-03-23T15:08:30Z
+- **Stopped at:** Completed quick task 260323-llx — llx wrapper scripts for API-key-only Claude Code
+- **Timestamp:** 2026-03-23
 
 ---
-*Last updated: 2026-03-23 after 02-01 complete*
+*Last updated: 2026-03-23 after quick task 260323-llx complete*
