@@ -7,10 +7,10 @@
 
 ### Switching
 
-- [ ] **SWIT-01**: User can switch Claude Code to OpenRouter API mode
-- [ ] **SWIT-02**: User can switch Claude Code back to vanilla Anthropic API mode
+- [x] **SWIT-01**: User can switch Claude Code to OpenRouter API mode
+- [x] **SWIT-02**: User can switch Claude Code back to vanilla Anthropic API mode
 - [ ] **SWIT-03**: Current mode (Anthropic/OpenRouter) is clearly displayed
-- [ ] **SWIT-04**: Switch persists — Claude Code sessions started after switching use the correct API
+- [x] **SWIT-04**: Switch persists — Claude Code sessions started after switching use the correct API
 
 ### Model Configuration
 
@@ -54,10 +54,10 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| SWIT-01 | Phase 1 | Pending |
-| SWIT-02 | Phase 1 | Pending |
+| SWIT-01 | Phase 1 | Complete |
+| SWIT-02 | Phase 1 | Complete |
 | SWIT-03 | Phase 1 | Pending |
-| SWIT-04 | Phase 1 | Pending |
+| SWIT-04 | Phase 1 | Complete |
 | MODL-01 | Phase 2 | Pending |
 | MODL-02 | Phase 2 | Pending |
 | MODL-03 | Phase 2 | Pending |
