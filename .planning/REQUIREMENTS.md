@@ -14,11 +14,11 @@
 
 ### Model Configuration
 
-- [ ] **MODL-01**: User can assign an OpenRouter model to the Opus tier
-- [ ] **MODL-02**: User can assign an OpenRouter model to the Sonnet tier
-- [ ] **MODL-03**: User can assign an OpenRouter model to the Haiku tier
-- [ ] **MODL-04**: Current tier→model mappings are displayed
-- [ ] **MODL-05**: Model assignments persist in config file
+- [x] **MODL-01**: User can assign an OpenRouter model to the Opus tier
+- [x] **MODL-02**: User can assign an OpenRouter model to the Sonnet tier
+- [x] **MODL-03**: User can assign an OpenRouter model to the Haiku tier
+- [x] **MODL-04**: Current tier→model mappings are displayed
+- [x] **MODL-05**: Model assignments persist in config file
 
 ### Model Discovery
 
@@ -58,11 +58,11 @@
 | SWIT-02 | Phase 1 | Complete |
 | SWIT-03 | Phase 1 | Complete |
 | SWIT-04 | Phase 1 | Complete |
-| MODL-01 | Phase 2 | Pending |
-| MODL-02 | Phase 2 | Pending |
-| MODL-03 | Phase 2 | Pending |
-| MODL-04 | Phase 2 | Pending |
-| MODL-05 | Phase 2 | Pending |
+| MODL-01 | Phase 2 | Complete |
+| MODL-02 | Phase 2 | Complete |
+| MODL-03 | Phase 2 | Complete |
+| MODL-04 | Phase 2 | Complete |
+| MODL-05 | Phase 2 | Complete |
 | DISC-01 | Phase 3 | Pending |
 | DISC-02 | Phase 3 | Pending |
 | DISC-03 | Phase 3 | Pending |

@@ -45,7 +45,7 @@ Plans:
 **Plans:** 1 plan
 
 Plans:
-- [ ] 02-01-PLAN.md — Model assignment logic, OpenRouter API validation, CLI flags, and interactive sub-menu
+- [x] 02-01-PLAN.md — Model assignment logic, OpenRouter API validation, CLI flags, and interactive sub-menu
 
 **Done when:**
 - User can set any OpenRouter model string to each tier
