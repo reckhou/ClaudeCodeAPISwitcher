@@ -42,6 +42,11 @@ Plans:
 
 **Requirements covered:** MODL-01, MODL-02, MODL-03, MODL-04, MODL-05
 
+**Plans:** 1 plan
+
+Plans:
+- [ ] 02-01-PLAN.md — Model assignment logic, OpenRouter API validation, CLI flags, and interactive sub-menu
+
 **Done when:**
 - User can set any OpenRouter model string to each tier
 - Mappings persist between script invocations
