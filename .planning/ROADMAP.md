@@ -17,6 +17,12 @@
 
 **Requirements covered:** SWIT-01, SWIT-02, SWIT-03, SWIT-04, CLI-01, CLI-02, CLI-03
 
+**Plans:** 2 plans
+
+Plans:
+- [ ] 01-01-PLAN.md — Project scaffold, config/keychain modules, shell profile injection
+- [ ] 01-02-PLAN.md — CLI entry point, switch/status commands, interactive menu
+
 **Done when:**
 - `claude-switcher` (or `node switcher.js`) runs and shows current mode
 - Running with `--use openrouter` switches API; `--use anthropic` restores it
