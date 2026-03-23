@@ -60,7 +60,7 @@ See: .planning/PROJECT.md (updated 2026-03-23)
 
 | # | Description | Date | Commit | Directory |
 |---|-------------|------|--------|-----------|
-| 260323-llx | Create wrapper script for API-key-only Claude Code auth | 2026-03-23 | TBD | [260323-llx-create-wrapper-script-for-api-key-only-c](./quick/260323-llx-create-wrapper-script-for-api-key-only-c/) |
+| 260323-llx | Create wrapper script for API-key-only Claude Code auth | 2026-03-23 | 8b8e9a0 | [260323-llx-create-wrapper-script-for-api-key-only-c](./quick/260323-llx-create-wrapper-script-for-api-key-only-c/) |
 
 ## Last Session
 
