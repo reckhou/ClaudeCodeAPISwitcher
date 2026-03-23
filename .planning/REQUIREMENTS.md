@@ -9,7 +9,7 @@
 
 - [x] **SWIT-01**: User can switch Claude Code to OpenRouter API mode
 - [x] **SWIT-02**: User can switch Claude Code back to vanilla Anthropic API mode
-- [ ] **SWIT-03**: Current mode (Anthropic/OpenRouter) is clearly displayed
+- [x] **SWIT-03**: Current mode (Anthropic/OpenRouter) is clearly displayed
 - [x] **SWIT-04**: Switch persists — Claude Code sessions started after switching use the correct API
 
 ### Model Configuration
@@ -29,9 +29,9 @@
 
 ### CLI Interface
 
-- [ ] **CLI-01**: Interactive menu mode for browsing and changing settings
-- [ ] **CLI-02**: Direct command flags for scripting (e.g. `--use openrouter`, `--set-sonnet <model>`)
-- [ ] **CLI-03**: Status command shows current mode and all tier mappings
+- [x] **CLI-01**: Interactive menu mode for browsing and changing settings
+- [x] **CLI-02**: Direct command flags for scripting (e.g. `--use openrouter`, `--set-sonnet <model>`)
+- [x] **CLI-03**: Status command shows current mode and all tier mappings
 
 ## v2 Requirements
 
@@ -56,7 +56,7 @@
 |-------------|-------|--------|
 | SWIT-01 | Phase 1 | Complete |
 | SWIT-02 | Phase 1 | Complete |
-| SWIT-03 | Phase 1 | Pending |
+| SWIT-03 | Phase 1 | Complete |
 | SWIT-04 | Phase 1 | Complete |
 | MODL-01 | Phase 2 | Pending |
 | MODL-02 | Phase 2 | Pending |
@@ -67,9 +67,9 @@
 | DISC-02 | Phase 3 | Pending |
 | DISC-03 | Phase 3 | Pending |
 | DISC-04 | Phase 3 | Pending |
-| CLI-01 | Phase 1 | Pending |
-| CLI-02 | Phase 1 | Pending |
-| CLI-03 | Phase 1 | Pending |
+| CLI-01 | Phase 1 | Complete |
+| CLI-02 | Phase 1 | Complete |
+| CLI-03 | Phase 1 | Complete |
 
 **Coverage:**
 - v1 requirements: 16 total

@@ -21,7 +21,7 @@
 
 Plans:
 - [x] 01-01-PLAN.md — Project scaffold, config/keychain modules, shell profile injection
-- [ ] 01-02-PLAN.md — CLI entry point, switch/status commands, interactive menu
+- [x] 01-02-PLAN.md — CLI entry point, switch/status commands, interactive menu
 
 **Done when:**
 - `claude-switcher` (or `node switcher.js`) runs and shows current mode
