@@ -5,7 +5,7 @@
 
 ---
 
-## Phase 1 — Core Switching & CLI
+## Phase 1: Core Switching & CLI
 
 **Goal:** Working switcher that toggles Claude Code between Anthropic and OpenRouter APIs, with a usable CLI interface.
 
@@ -24,7 +24,7 @@
 
 ---
 
-## Phase 2 — Model Configuration
+## Phase 2: Model Configuration
 
 **Goal:** Users can assign any OpenRouter model to each Claude tier (Opus/Sonnet/Haiku) and mappings persist.
 
@@ -43,7 +43,7 @@
 
 ---
 
-## Phase 3 — Model Discovery & Recommendations
+## Phase 3: Model Discovery & Recommendations
 
 **Goal:** Fetch top programming models from OpenRouter rankings and surface them as recommendations when selecting models.
 
