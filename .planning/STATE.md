@@ -3,8 +3,8 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: All 3 phases complete. Claude Code API Switcher is fully functional with switching, model config, and discovery.
 status: in-progress
-stopped_at: "Checkpoint: human-verify — Task 3 end-to-end switching verification for 01-02-PLAN.md"
-last_updated: "2026-03-23T11:47:50.014Z"
+stopped_at: "Completed 01-02-PLAN.md — PowerShell profile injection bug fixed, plan complete"
+last_updated: "2026-03-23T12:15:00.000Z"
 progress:
   total_phases: 3
   completed_phases: 1
@@ -25,13 +25,13 @@ See: .planning/PROJECT.md (updated 2026-03-23)
 
 - **Phase:** 1 of 3
 - **Milestone:** v1.0
-- **State:** Plan 02 auto-tasks complete, awaiting human-verify checkpoint (Task 3)
+- **State:** Phase 01 Plan 02 complete — all tasks done, bug fix applied and verified
 
 ## Phase Progress
 
 | Phase | Name | Status |
 |-------|------|--------|
-| 1 | Core Switching & CLI | Awaiting human-verify (2/2 auto-tasks done) |
+| 1 | Core Switching & CLI | Complete (2/2 plans done, bug fix applied) |
 | 2 | Model Configuration | Pending |
 | 3 | Model Discovery & Recommendations | Pending |
 
@@ -43,6 +43,7 @@ See: .planning/PROJECT.md (updated 2026-03-23)
 - ANTHROPIC_API_KEY must be set to empty string (not omitted) when switching to OpenRouter (01-01)
 - ANTHROPIC_AUTH_TOKEN (not ANTHROPIC_API_KEY) receives the OpenRouter key (01-01)
 - [Phase 01-02]: ESM static imports require all command modules to exist at startup — menu.js must be created before CLI entry point can function even for non-menu routes (01-02)
+- [Phase 01-02]: On Windows, never use `powershell -Command "echo $PROFILE"` from bash/cmd — bash expands $PROFILE to empty string. Use escaped form or `pwsh` with single-quote PowerShell string (01-02 bug fix)
 
 ## Performance Metrics
 
@@ -53,8 +54,8 @@ See: .planning/PROJECT.md (updated 2026-03-23)
 
 ## Last Session
 
-- **Stopped at:** Checkpoint: human-verify — Task 3 end-to-end switching verification for 01-02-PLAN.md
-- **Timestamp:** 2026-03-23T11:42:52Z
+- **Stopped at:** Completed 01-02-PLAN.md — phase 01 fully complete
+- **Timestamp:** 2026-03-23T12:15:00Z
 
 ---
-*Last updated: 2026-03-23 after 01-01 execution*
+*Last updated: 2026-03-23 after 01-02 bug fix and plan completion*

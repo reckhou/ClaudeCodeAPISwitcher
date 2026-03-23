@@ -78,6 +78,7 @@ Each task was committed atomically:
 
 1. **Task 1: Switch command, status command, and CLI entry point** - `0fe3a68` (feat)
 2. **Task 2: Interactive menu command** - `aea2612` (feat)
+3. **Bug fix: PowerShell profile injection wrong shell version** - `17ceefd` (fix)
 
 **Plan metadata:** (pending final commit)
 
@@ -107,12 +108,23 @@ Each task was committed atomically:
 
 ---
 
-**Total deviations:** 1 auto-fixed (blocking — module resolution)
-**Impact on plan:** Required fix, no scope creep. menu.js fully implements what Task 2 specified regardless.
+**2. [Rule 1 - Bug] Fixed PowerShell profile injection writing to wrong shell version's profile**
+- **Found during:** Task 3 (human-verify checkpoint)
+- **Issue:** `getProfilePath()` called `powershell -Command "echo $PROFILE"` — bash expanded `$PROFILE` to empty string before PowerShell received it, causing PowerShell to error. The catch block silently fell back to the hardcoded Windows PowerShell 5.1 path (`WindowsPowerShell/`) rather than the PowerShell 7 path (`PowerShell/`). Users running PS7 terminals saw an empty `$PROFILE` because the injection was written to the PS5.1 profile file instead.
+- **Fix:** Changed command to use JS template literal trick `"Write-Output ${"$"}PROFILE"` so bash never sees the `$` but PowerShell receives the literal `$PROFILE` variable. Also made the function try `pwsh` (PS7) first, then fall back to `powershell.exe` (PS5.1), since modern Windows users typically run PS7 terminals.
+- **Files modified:** lib/profile.js
+- **Verification:** `node -e "import('./lib/profile.js').then(m => console.log(m.getProfilePath()))"` returns `d:\Documents\PowerShell\Microsoft.PowerShell_profile.ps1` (PS7 path); `--status` shows "Profile injected: Yes" after re-running `--use openrouter`
+- **Committed in:** `17ceefd` (post-checkpoint fix commit)
+
+---
+
+**Total deviations:** 2 auto-fixed (1 blocking — module resolution, 1 bug — wrong PS profile path)
+**Impact on plan:** Both fixes required for correctness. No scope creep.
 
 ## Issues Encountered
 
 - ESM static imports cause all imports to resolve at startup — `--status` failed until `menu.js` existed. Fixed by creating the full menu.js implementation before Task 1 commit.
+- PowerShell profile injection silently wrote to the wrong profile path (PS5.1 vs PS7). Discovered during human-verify checkpoint when user found empty `$PROFILE`. Fixed by using `pwsh` first and escaping `$PROFILE` to prevent bash expansion.
 
 ## User Setup Required
 

@@ -17,7 +17,7 @@
 
 **Requirements covered:** SWIT-01, SWIT-02, SWIT-03, SWIT-04, CLI-01, CLI-02, CLI-03
 
-**Plans:** 1/2 plans executed
+**Plans:** 2/2 plans executed
 
 Plans:
 - [x] 01-01-PLAN.md — Project scaffold, config/keychain modules, shell profile injection
