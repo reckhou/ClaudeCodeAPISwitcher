@@ -12,14 +12,13 @@ One command to switch Claude Code between Anthropic and OpenRouter, with the rig
 
 ### Validated
 
-(None yet — ship to validate)
+- [x] Toggle Claude Code between vanilla Anthropic API and OpenRouter API — Validated in Phase 1: Core Switching & CLI
+- [x] Map OpenRouter models to each Claude tier (Opus, Sonnet, Haiku) — Validated in Phase 2: Model Configuration
+- [x] Persist configuration across sessions — Validated in Phase 2: Model Configuration
 
 ### Active
 
-- [ ] Toggle Claude Code between vanilla Anthropic API and OpenRouter API
-- [ ] Map OpenRouter models to each Claude tier (Opus, Sonnet, Haiku)
 - [ ] Fetch and cache top 10 programming models from OpenRouter rankings as recommendations
-- [ ] Persist configuration across sessions
 
 ### Out of Scope
 
@@ -45,8 +44,11 @@ One command to switch Claude Code between Anthropic and OpenRouter, with the rig
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Node.js runtime | Matches Claude Code ecosystem, great JSON/API handling | — Pending |
-| Config persistence via JSON file | Simple, readable, portable | — Pending |
+| Node.js runtime | Matches Claude Code ecosystem, great JSON/API handling | ESM module type required; keytar-sync used |
+| Config persistence via JSON file | Simple, readable, portable | Implemented via `conf` package |
+| OpenRouter base URL `https://openrouter.ai/api` | No /v1 suffix — critical for Claude Code compatibility | Confirmed in Phase 1 |
+| ANTHROPIC_AUTH_TOKEN receives OpenRouter key | ANTHROPIC_API_KEY must be empty string, not omitted | Confirmed in Phase 1 |
+| `--set-opus/sonnet/haiku` flags for model assignment | CLI-first UX matching existing `--use`/`--status` pattern | Implemented in Phase 2 |
 
 ## Evolution
 
@@ -66,4 +68,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-03-23 after initialization*
+*Last updated: 2026-03-23 after Phase 2 (Model Configuration) complete*
